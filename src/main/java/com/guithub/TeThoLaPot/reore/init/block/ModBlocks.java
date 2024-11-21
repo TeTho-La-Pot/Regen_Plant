@@ -2,20 +2,11 @@ package com.guithub.TeThoLaPot.reore.init.block;
 
 import com.guithub.TeThoLaPot.reore.RE_Ore;
 import com.guithub.TeThoLaPot.reore.item.Items;
-import net.minecraft.core.BlockPos;
-import net.minecraft.world.InteractionHand;
-import net.minecraft.world.InteractionResult;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.phys.BlockHitResult;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -28,12 +19,12 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, RE_Ore.MOD_ID);
 
     public static final RegistryObject<Block> TEST_ORE = registerBlock("test_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.IRON_BLOCK).sound(SoundType.STONE)));
+            () -> new Block(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.IRON_BLOCK).sound(SoundType.STONE).noLootTable()));
 
-    public static final RegistryObject<Block> REGEN_ORE_ENTITY = registerBlock("regen_ore_entity",
-            () -> new RegenOreBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.IRON_ORE).sound(SoundType.STONE)));
+    public static final RegistryObject<Block> REGEN_IRON_ORE_ENTITY = registerBlock("regen_iron_ore",
+            () -> new RegenOreBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.IRON_ORE).sound(SoundType.STONE).noLootTable()));
 
-    public static final RegistryObject<Block> REGENED_ORE = registerBlock("regened_ore",
+    public static final RegistryObject<Block> REGENED_IRON_ORE = registerBlock("regened_iron_ore",
             () -> new RegenedOreBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.IRON_BLOCK).sound(SoundType.STONE)));
 
 

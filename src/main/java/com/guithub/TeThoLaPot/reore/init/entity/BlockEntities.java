@@ -13,5 +13,5 @@ public class BlockEntities {
 
     public static final RegistryObject<BlockEntityType<RegenOreEntity>> REGEN_ORE_ENTITY =
             BLOCK_ENTITIES.register("regen_ore_entity",
-                    () -> BlockEntityType.Builder.of(RegenOreEntity::new, ModBlocks.REGEN_ORE_ENTITY.get()).build(null));
+                    () -> BlockEntityType.Builder.of(RegenOreEntity::new, ModBlocks.REGEN_IRON_ORE_ENTITY.get()).build(null));
 }

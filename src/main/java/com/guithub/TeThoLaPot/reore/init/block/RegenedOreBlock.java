@@ -15,7 +15,7 @@ public class RegenedOreBlock extends Block{
     public void destroy(LevelAccessor pLevel, BlockPos pPos, BlockState pState) {
         super.destroy(pLevel, pPos, pState);
             if (!pLevel.isClientSide()) {
-                pLevel.setBlock(pPos, ModBlocks.REGEN_ORE_ENTITY.get().defaultBlockState(), 3);
+                pLevel.setBlock(pPos, ModBlocks.REGEN_IRON_ORE_ENTITY.get().defaultBlockState(), 3);
         }
     }
 }

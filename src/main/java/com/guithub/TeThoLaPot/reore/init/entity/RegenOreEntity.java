@@ -26,7 +26,7 @@ public class RegenOreEntity extends BlockEntity implements TickaleBlockEntity {
 
         if (this.ticks++ == 100) {
             this.level.removeBlock(new BlockPos(x, y, z), false);
-            this.level.setBlock(new BlockPos(x, y, z), ModBlocks.REGENED_ORE.get().defaultBlockState(), 3);
+            this.level.setBlock(new BlockPos(x, y, z), ModBlocks.REGENED_IRON_ORE.get().defaultBlockState(), 3);
         }
     }
 }
