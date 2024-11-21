@@ -6,6 +6,7 @@ import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.Set;
@@ -17,8 +18,8 @@ public class ReOreBlockLootTables extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
-        this.add(ModBlocks.REGENED_ORE.get(),
-                block -> this.createOreDrop(block, Items.RAW_IRON));
+        this.add(ModBlocks.REGENED_IRON_ORE.get(),
+                block -> this.createOreDrop(Blocks.IRON_ORE, Items.RAW_IRON));
     }
 
 

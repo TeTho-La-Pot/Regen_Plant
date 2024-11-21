@@ -21,8 +21,8 @@ public class CreativeModTabs {
                         pOutput.accept(Items.TORE.get());
 
                         pOutput.accept(ModBlocks.TEST_ORE.get());
-                        pOutput.accept(ModBlocks.REGEN_ORE_ENTITY.get());
-                        pOutput.accept(ModBlocks.REGENED_ORE.get());
+                        pOutput.accept(ModBlocks.REGEN_IRON_ORE_ENTITY.get());
+                        pOutput.accept(ModBlocks.REGENED_IRON_ORE.get());
 
                     })
                     .build());

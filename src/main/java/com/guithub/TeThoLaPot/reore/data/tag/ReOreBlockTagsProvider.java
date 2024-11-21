@@ -19,10 +19,10 @@ public class ReOreBlockTagsProvider extends BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .add(ModBlocks.REGENED_ORE.get(),
-                    ModBlocks.REGEN_ORE_ENTITY.get());
+                .add(ModBlocks.REGENED_IRON_ORE.get(),
+                    ModBlocks.REGEN_IRON_ORE_ENTITY.get());
 
         this.tag(BlockTags.NEEDS_STONE_TOOL)
-                .add(ModBlocks.REGENED_ORE.get());
+                .add(ModBlocks.REGENED_IRON_ORE.get());
     }
 }

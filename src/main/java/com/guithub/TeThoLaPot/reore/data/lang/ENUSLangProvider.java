@@ -19,7 +19,7 @@ public class ENUSLangProvider extends LanguageProvider {
         addItem(Items.TORE, "Raw Test Ore");
 
         //Blocks
-        addBlock(ModBlocks.REGENED_IRON_ORE, "Regen Iron Ore");
+        addBlock(ModBlocks.REGEN_IRON_ORE_ENTITY, "Regening Iron Ore");
         addBlock(ModBlocks.REGENED_IRON_ORE, "Regened Iron Ore");
         addBlock(ModBlocks.TEST_ORE, "Test Ore");
 
