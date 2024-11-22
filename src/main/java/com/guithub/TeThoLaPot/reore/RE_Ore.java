@@ -1,5 +1,6 @@
 package com.guithub.TeThoLaPot.reore;
 
+import com.guithub.TeThoLaPot.reore.config.RegenOreClientConfig;
 import com.guithub.TeThoLaPot.reore.init.block.ModBlocks;
 import com.guithub.TeThoLaPot.reore.init.entity.BlockEntities;
 import com.guithub.TeThoLaPot.reore.item.CreativeModTabs;
@@ -12,7 +13,9 @@ import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -39,6 +42,8 @@ public class RE_Ore {
         modEventBus.addListener(this::addCreative);
 
         BlockEntities.BLOCK_ENTITIES.register(modEventBus);
+
+//        ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, RegenOreClientConfig.SPEC, "RegenOre-client.toml");
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {

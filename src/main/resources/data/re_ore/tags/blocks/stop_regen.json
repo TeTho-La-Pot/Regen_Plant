@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "re_ore:regen_ore_entity",
-    "re_ore:regened_ore"
+    "re_ore:regen_iron_ore",
+    "re_ore:regened_iron_ore"
   ]
 }
