@@ -2,6 +2,44 @@
   "replace": false,
   "values": [
     "re_ore:regen_iron_ore",
-    "re_ore:regened_iron_ore"
+    "re_ore:regened_iron_ore",
+    "re_ore:regen_deepslate_iron_ore",
+    "re_ore:regened_deepslate_iron_ore",
+    "re_ore:regen_copper_ore",
+    "re_ore:regened_copper_ore",
+    "re_ore:regen_deepslate_copper_ore",
+    "re_ore:regened_deepslate_copper_ore",
+    "re_ore:regen_gold_ore",
+    "re_ore:regened_gold_ore",
+    "re_ore:regen_deepslate_gold_ore",
+    "re_ore:regened_deepslate_gold_ore",
+    "re_ore:regen_nether_gold_ore",
+    "re_ore:regened_nether_gold_ore",
+    "re_ore:regen_diamond_ore",
+    "re_ore:regened_diamond_ore",
+    "re_ore:regen_deepslate_diamond_ore",
+    "re_ore:regened_deepslate_diamond_ore",
+    "re_ore:regen_emerald_ore",
+    "re_ore:regened_emerald_ore",
+    "re_ore:regen_deepslate_emerald_ore",
+    "re_ore:regened_deepslate_emerald_ore",
+
+    "re_ore:regen_coal_ore",
+    "re_ore:regened_coal_ore",
+    "re_ore:regen_deepslate_coal_ore",
+    "re_ore:regened_deepslate_coal_ore",
+
+    "re_ore:regen_lapis_ore",
+    "re_ore:regened_lapis_ore",
+    "re_ore:regen_deepslate_lapis_ore",
+    "re_ore:regened_deepslate_lapis_ore",
+
+    "re_ore:regen_redstone_ore",
+    "re_ore:regened_redstone_ore",
+    "re_ore:regen_deepslate_redstone_ore",
+    "re_ore:regened_deepslate_redstone_ore",
+
+    "re_ore:regen_nether_quartz_ore",
+    "re_ore:regened_nether_quartz_ore"
   ]
 }

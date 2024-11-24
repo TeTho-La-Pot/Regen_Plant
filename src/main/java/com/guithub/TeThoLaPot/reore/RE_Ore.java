@@ -1,6 +1,6 @@
 package com.guithub.TeThoLaPot.reore;
 
-import com.guithub.TeThoLaPot.reore.config.RegenOreClientConfig;
+import com.guithub.TeThoLaPot.reore.config.RegenOreCommonConfig;
 import com.guithub.TeThoLaPot.reore.init.block.ModBlocks;
 import com.guithub.TeThoLaPot.reore.init.entity.BlockEntities;
 import com.guithub.TeThoLaPot.reore.item.CreativeModTabs;
@@ -43,7 +43,7 @@ public class RE_Ore {
 
         BlockEntities.BLOCK_ENTITIES.register(modEventBus);
 
-//        ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, RegenOreClientConfig.SPEC, "RegenOre-client.toml");
+        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, RegenOreCommonConfig.SPEC, "RegenOre.toml");
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {

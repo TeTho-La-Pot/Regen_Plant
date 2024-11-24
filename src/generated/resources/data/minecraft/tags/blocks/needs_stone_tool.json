@@ -1,5 +1,10 @@
 {
   "values": [
-    "re_ore:regened_iron_ore"
+    "re_ore:regened_iron_ore",
+    "re_ore:regened_deepslate_iron_ore",
+    "re_ore:regened_copper_ore",
+    "re_ore:regened_deepslate_copper_ore",
+    "re_ore:regened_lapis_ore",
+    "re_ore:regened_deepslate_lapis_ore"
   ]
 }
