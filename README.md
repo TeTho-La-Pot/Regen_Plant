@@ -6,7 +6,7 @@ https://legacy.curseforge.com/minecraft/mc-mods/regen_ore
 
 # Contents description
 再生する鉱石を追加するMODです。  
-クリエイティブでのみ入手可能で、主にアドベンチャーマップやRPG風のMOD構成で使用することを想定しています。
+主にアドベンチャーマップやRPG風のMOD構成で使用することを想定しています。
 
 # Lisence
 ソースコードの無断転載を禁止します。
