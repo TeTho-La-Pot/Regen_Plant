@@ -1,5 +1,5 @@
 # RegenOre
-このソースコードはMinecraft ver.1.20.1用です。
+このソースコードはMinecraft ver.1.20.1のMOD用です。
 
 # Download
 https://legacy.curseforge.com/minecraft/mc-mods/regen_ore
