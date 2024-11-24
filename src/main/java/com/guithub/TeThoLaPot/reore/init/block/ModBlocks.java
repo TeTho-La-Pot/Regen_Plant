@@ -162,13 +162,13 @@ public class ModBlocks {
             () -> new RegenRedstone(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE).noLootTable()));
 
     public static final RegistryObject<Block> REGENED_REDSTONE_ORE = registerBlock("regened_redstone_ore",
-            () -> new RegenedRedstone(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)));
+            () -> new RegenedRedstone(BlockBehaviour.Properties.copy(Blocks.REDSTONE_ORE)));
 
     public static final RegistryObject<Block> REGEN_DEEPSLATE_REDSTONE_ORE_ENTITY = registerBlock("regen_deepslate_redstone_ore",
             () -> new RegenDeepslateRedstone(BlockBehaviour.Properties.copy(Blocks.COBBLED_DEEPSLATE).noLootTable()));
 
     public static final RegistryObject<Block> REGENED_DEEPSLATE_REDSTONE_ORE = registerBlock("regened_deepslate_redstone_ore",
-            () -> new RegenedDeepslateRedstone(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_IRON_ORE)));
+            () -> new RegenedDeepslateRedstone(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_REDSTONE_ORE)));
 
 
     //ネザークォーツ
