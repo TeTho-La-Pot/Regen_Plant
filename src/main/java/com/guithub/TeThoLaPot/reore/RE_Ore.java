@@ -64,4 +64,5 @@ public class RE_Ore {
         public static void onClientSetup(FMLClientSetupEvent event) {
         }
     }
+
 }
