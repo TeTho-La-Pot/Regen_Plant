@@ -2,6 +2,7 @@ package com.guithub.TeThoLaPot.reore.event;
 
 import com.guithub.TeThoLaPot.reore.RE_Ore;
 import com.guithub.TeThoLaPot.reore.tag.RegenTags;
+import com.guithub.TeThoLaPot.reore.util.RegenTickUtils;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.player.Player;
@@ -21,10 +22,8 @@ public class BreakEvent {
         Player player = event.getPlayer();
         BlockPos pos = event.getPos();
 
-        BlockState state = level.getBlockState(pos);
-
         if (player.isCreative()){
-          if (state.is(RegenTags.Blocks.STOP_REGEN)){
+          if (RegenTickUtils.isCanRegen(levelAccessor.getBlockState(pos)) || RegenTickUtils.isDoneRegen(levelAccessor.getBlockState(pos))){
                 level.removeBlock(pos, false);
           }
         }

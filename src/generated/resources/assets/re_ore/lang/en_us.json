@@ -1,5 +1,4 @@
 {
-  "Creativetabs.reore_tab": "Regen Ore",
   "block.re_ore.regen_coal_ore": "Regening Coal Ore",
   "block.re_ore.regen_copper_ore": "Regening Copper Ore",
   "block.re_ore.regen_deepslate_coal_ore": "Regening Deepslate Coal Ore",
@@ -37,5 +36,8 @@
   "block.re_ore.regened_nether_quartz_ore": "Regened NEther Quartz Ore",
   "block.re_ore.regened_redstone_ore": "Regened Redstone Ore",
   "block.re_ore.test_ore": "Test Ore",
-  "item.re_ore.tore": "Raw Test Ore"
+  "config.jade.plugin_re_ore.regen_tick": "Regen Time",
+  "creativetab.reore_tab": "Regen Ore",
+  "item.re_ore.tore": "Raw Test Ore",
+  "re_ore.regen": "RegenCooldown: %s"
 }

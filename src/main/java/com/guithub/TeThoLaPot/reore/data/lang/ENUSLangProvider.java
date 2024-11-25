@@ -58,6 +58,10 @@ public class ENUSLangProvider extends LanguageProvider {
         addBlock(ModBlocks.TEST_ORE, "Test Ore");
 
         //CreativeTabs
-        add("Creativetabs.reore_tab", "Regen Ore");
+        add("creativetab.reore_tab", "Regen Ore");
+
+        //Jade
+        add("config.jade.plugin_re_ore.regen_tick", "Regen Time");
+        add("re_ore.regen", "RegenCooldown: %s");
     }
 }

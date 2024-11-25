@@ -51,7 +51,6 @@ public class RE_Ore {
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
-            event.accept(Items.TORE);
         }
     }
 

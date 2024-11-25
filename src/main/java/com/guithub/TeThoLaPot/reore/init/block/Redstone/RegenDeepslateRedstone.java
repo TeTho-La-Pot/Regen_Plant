@@ -2,11 +2,10 @@ package com.guithub.TeThoLaPot.reore.init.block.Redstone;
 
 import com.guithub.TeThoLaPot.reore.init.block.ModBlocks;
 import com.guithub.TeThoLaPot.reore.init.entity.BlockEntities;
-import com.guithub.TeThoLaPot.reore.init.entity.util.TickaleBlockEntity;
+import com.guithub.TeThoLaPot.reore.util.TickaleBlockEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.EntityBlock;
 import net.minecraft.world.level.block.RedStoneOreBlock;
 import net.minecraft.world.level.block.entity.BlockEntity;

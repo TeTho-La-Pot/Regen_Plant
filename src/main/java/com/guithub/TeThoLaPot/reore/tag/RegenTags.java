@@ -8,7 +8,8 @@ import net.minecraft.world.level.block.Block;
 
 public class RegenTags {
     public static class Blocks{
-        public static final TagKey<Block> STOP_REGEN = tag("stop_regen");
+        public static final TagKey<Block> CAN_REGEN = tag("can_regen");
+        public static final TagKey<Block> DONE_REGEN = tag("done_regen");
 
 
         private static TagKey<Block> tag(String name){
