@@ -8,12 +8,8 @@ import net.minecraft.network.Connection;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraft.world.level.block.entity.BlockEntityTicker;
 import net.minecraft.world.level.block.state.BlockState;
 import org.jetbrains.annotations.Nullable;
 
@@ -42,7 +38,6 @@ public class RegenOreEntity extends BlockEntity implements TickaleBlockEntity {
         if (state.is(ModBlocks.REGEN_IRON_ORE_ENTITY.get())) {
             if (this.ticks++ >= tickIron) {
                 this.level.setBlock(pos, ModBlocks.REGENED_IRON_ORE.get().defaultBlockState(), 3);
-
             }
         }
         if(state.is(ModBlocks.REGEN_DEEPSLATE_IRON_ORE_ENTITY.get())) {
