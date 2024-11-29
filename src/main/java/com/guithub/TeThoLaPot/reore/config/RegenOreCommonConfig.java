@@ -24,6 +24,7 @@ public class RegenOreCommonConfig {
     public static final ForgeConfigSpec.ConfigValue<Integer> REDSTONE_ORE_REGEN_TICK;
     public static final ForgeConfigSpec.ConfigValue<Integer> DEEPSLATE_REDSTONE_ORE_REGEN_TICK;
     public static final ForgeConfigSpec.ConfigValue<Integer> NETHER_QUARTZ_ORE_REGEN_TICK;
+    public static final ForgeConfigSpec.BooleanValue CAN_VANILLA_REGEN;
 
     static {
         BUILDER.push("Configs for RegenOre Mod");
@@ -64,6 +65,11 @@ public class RegenOreCommonConfig {
                 .define("Deepslate Redstone Regen Tick", 2000);
         NETHER_QUARTZ_ORE_REGEN_TICK = BUILDER.comment("How long is  regen for Deepslate Iron ore.")
                 .define("Nether Quartz Regen Tick", 2000);
+
+        CAN_VANILLA_REGEN = BUILDER.comment("Can regen ores that are already in the world.")
+                .define("Can Vanilla Regen", false);
+
+
 
 
         BUILDER.pop();

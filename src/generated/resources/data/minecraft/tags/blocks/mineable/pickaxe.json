@@ -35,6 +35,24 @@
     "re_ore:regened_deepslate_redstone_ore",
     "re_ore:regen_deepslate_redstone_ore",
     "re_ore:regened_nether_quartz_ore",
-    "re_ore:regen_nether_quartz_ore"
+    "re_ore:regen_nether_quartz_ore",
+    "re_ore:v_regen_iron_ore",
+    "re_ore:v_regen_deepslate_iron_ore",
+    "re_ore:v_regen_copper_ore",
+    "re_ore:v_regen_deepslate_copper_ore",
+    "re_ore:v_regen_gold_ore",
+    "re_ore:v_regen_deepslate_gold_ore",
+    "re_ore:v_regen_nether_gold_ore",
+    "re_ore:v_regen_diamond_ore",
+    "re_ore:v_regen_deepslate_diamond_ore",
+    "re_ore:v_regen_emerald_ore",
+    "re_ore:v_regen_deepslate_emerald_ore",
+    "re_ore:v_regen_coal_ore",
+    "re_ore:v_regen_deepslate_coal_ore",
+    "re_ore:v_regen_lapis_ore",
+    "re_ore:v_regen_deepslate_lapis_ore",
+    "re_ore:v_regen_redstone_ore",
+    "re_ore:v_regen_deepslate_redstone_ore",
+    "re_ore:v_regen_nether_quartz_ore"
   ]
 }

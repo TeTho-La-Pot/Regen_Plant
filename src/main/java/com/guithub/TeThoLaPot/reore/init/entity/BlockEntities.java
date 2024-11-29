@@ -32,7 +32,25 @@ public class BlockEntities {
                             ModBlocks.REGEN_DEEPSLATE_LAPIS_ORE_ENTITY.get(),
                             ModBlocks.REGEN_REDSTONE_ORE_ENTITY.get(),
                             ModBlocks.REGEN_DEEPSLATE_REDSTONE_ORE_ENTITY.get(),
-                            ModBlocks.REGEN_NETHER_QUARTZ_ORE_ENTITY.get()
+                            ModBlocks.REGEN_NETHER_QUARTZ_ORE_ENTITY.get(),
+                            ModBlocks.V_REGEN_IRON_ORE_ENTITY.get(),
+                            ModBlocks.V_REGEN_DEEPSLATE_IRON_ORE_ENTITY.get(),
+                            ModBlocks.V_REGEN_COPPER_ORE_ENTITY.get(),
+                            ModBlocks.V_REGEN_DEEPSLATE_COPPER_ORE_ENTITY.get(),
+                            ModBlocks.V_REGEN_GOLD_ORE_ENTITY.get(),
+                            ModBlocks.V_REGEN_DEEPSLATE_GOLD_ORE_ENTITY.get(),
+                            ModBlocks.V_REGEN_NETHER_GOLD_ORE_ENTITY.get(),
+                            ModBlocks.V_REGEN_DIAMOND_ORE_ENTITY.get(),
+                            ModBlocks.V_REGEN_DEEPSLATE_DIAMOND_ORE_ENTITY.get(),
+                            ModBlocks.V_REGEN_EMERALD_ORE_ENTITY.get(),
+                            ModBlocks.V_REGEN_DEEPSLATE_EMERALD_ORE_ENTITY.get(),
+                            ModBlocks.V_REGEN_COAL_ORE_ENTITY.get(),
+                            ModBlocks.V_REGEN_DEEPSLATE_COAL_ORE_ENTITY.get(),
+                            ModBlocks.V_REGEN_LAPIS_ORE_ENTITY.get(),
+                            ModBlocks.V_REGEN_DEEPSLATE_LAPIS_ORE_ENTITY.get(),
+                            ModBlocks.V_REGEN_REDSTONE_ORE_ENTITY.get(),
+                            ModBlocks.V_REGEN_DEEPSLATE_REDSTONE_ORE_ENTITY.get(),
+                            ModBlocks.V_REGEN_NETHER_QUARTZ_ORE_ENTITY.get()
                                 ).build(null));
 
 

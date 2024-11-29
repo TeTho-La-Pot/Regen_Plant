@@ -55,6 +55,25 @@ public class ENUSLangProvider extends LanguageProvider {
         addBlock(ModBlocks.REGENED_DEEPSLATE_REDSTONE_ORE, "Regened Deepslate Redstone Ore");
         addBlock(ModBlocks.REGEN_NETHER_QUARTZ_ORE_ENTITY, "Regening Nether Quartz Ore");
         addBlock(ModBlocks.REGENED_NETHER_QUARTZ_ORE, "Regened NEther Quartz Ore");
+        addBlock(ModBlocks.V_REGEN_IRON_ORE_ENTITY, "Regening Iron Ore");
+        addBlock(ModBlocks.V_REGEN_DEEPSLATE_IRON_ORE_ENTITY, "Regening Deepslate Iron Ore");
+        addBlock(ModBlocks.V_REGEN_COPPER_ORE_ENTITY, "Regening Copper Ore");
+        addBlock(ModBlocks.V_REGEN_DEEPSLATE_COPPER_ORE_ENTITY, "Regening Deepslate Copper Ore");
+        addBlock(ModBlocks.V_REGEN_GOLD_ORE_ENTITY, "Regening Gold Ore");
+        addBlock(ModBlocks.V_REGEN_DEEPSLATE_GOLD_ORE_ENTITY, "Regening Deepslate Gold Ore");
+        addBlock(ModBlocks.V_REGEN_NETHER_GOLD_ORE_ENTITY, "Regening Nether Gold Ore");
+        addBlock(ModBlocks.V_REGEN_DIAMOND_ORE_ENTITY, "Regening Diamond Ore");
+        addBlock(ModBlocks.V_REGEN_DEEPSLATE_DIAMOND_ORE_ENTITY, "Regening Deepslate Diamond Ore");
+        addBlock(ModBlocks.V_REGEN_EMERALD_ORE_ENTITY, "Regening Emerald Ore");
+        addBlock(ModBlocks.V_REGEN_DEEPSLATE_EMERALD_ORE_ENTITY, "Regening Deepslate Emerald Ore");
+        addBlock(ModBlocks.V_REGEN_COAL_ORE_ENTITY, "Regening Coal Ore");
+        addBlock(ModBlocks.V_REGEN_DEEPSLATE_COAL_ORE_ENTITY, "Regening Deepslate Coal Ore");
+        addBlock(ModBlocks.V_REGEN_LAPIS_ORE_ENTITY, "Regening Lapis Lazuli Ore");
+        addBlock(ModBlocks.V_REGEN_DEEPSLATE_LAPIS_ORE_ENTITY, "Regening Deepslate Lapis Lazuli Ore");
+        addBlock(ModBlocks.V_REGEN_REDSTONE_ORE_ENTITY, "Regening Redstone Ore");
+        addBlock(ModBlocks.V_REGEN_DEEPSLATE_REDSTONE_ORE_ENTITY, "Regening Deepslate Redstone Ore");
+        addBlock(ModBlocks.V_REGEN_NETHER_QUARTZ_ORE_ENTITY, "Regening Nether Quartz Ore");
+
         addBlock(ModBlocks.TEST_ORE, "Test Ore");
 
         //CreativeTabs

@@ -15,4 +15,8 @@ public class RegenTickUtils {
     public static boolean isDoneRegen(BlockState state){
         return state.is(RegenTags.Blocks.DONE_REGEN);
     }
+
+    public static boolean vRegen(BlockState state){
+        return state.is(RegenTags.Blocks.V_REGEN);
+    }
 }

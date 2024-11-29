@@ -24,4 +24,5 @@ public class RegenCooldownUtils {
     public static float tickDRedstone = RegenOreCommonConfig.DEEPSLATE_REDSTONE_ORE_REGEN_TICK.get();
     public static float tickNQuartz = RegenOreCommonConfig.NETHER_QUARTZ_ORE_REGEN_TICK.get();
 
+    public static boolean vanillaRegen = RegenOreCommonConfig.CAN_VANILLA_REGEN.get();
 }

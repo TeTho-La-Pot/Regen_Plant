@@ -9,6 +9,7 @@ import net.minecraft.network.protocol.Packet;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import org.jetbrains.annotations.Nullable;
@@ -34,6 +35,7 @@ public class RegenOreEntity extends BlockEntity implements TickaleBlockEntity {
             return;
         }
 
+//追加鉱石
 
         if (state.is(ModBlocks.REGEN_IRON_ORE_ENTITY.get())) {
             if (this.ticks++ >= tickIron) {
@@ -41,28 +43,28 @@ public class RegenOreEntity extends BlockEntity implements TickaleBlockEntity {
             }
         }
         if(state.is(ModBlocks.REGEN_DEEPSLATE_IRON_ORE_ENTITY.get())) {
-            if (this.ticks++ >= tickDIron) {
+            if (this.ticks++ >= tickIron) {
                 this.level.setBlock(pos, ModBlocks.REGENED_DEEPSLATE_IRON_ORE.get().defaultBlockState(), 3);
             }
         }
         if (state.is(ModBlocks.REGEN_COPPER_ORE_ENTITY.get())) {
-            if (this.ticks++ >= tickCopper) {
+            if (this.ticks++ >= tickIron) {
                 this.level.setBlock(pos, ModBlocks.REGENED_COPPER_ORE.get().defaultBlockState(), 3);
             }
         }
         if(state.is(ModBlocks.REGEN_DEEPSLATE_COPPER_ORE_ENTITY.get())) {
-            if (this.ticks++ >= tickDCopper) {
+            if (this.ticks++ >= tickIron) {
                 this.level.setBlock(pos, ModBlocks.REGENED_DEEPSLATE_COPPER_ORE.get().defaultBlockState(), 3);
             }
         }
         if (state.is(ModBlocks.REGEN_GOLD_ORE_ENTITY.get())) {
-            if (this.ticks++ >= tickGold) {
+            if (this.ticks++ >= tickIron) {
                 this.level.setBlock(pos, ModBlocks.REGENED_GOLD_ORE.get().defaultBlockState(), 3);
             }
         }
         if(state.is(ModBlocks.REGEN_DEEPSLATE_GOLD_ORE_ENTITY.get())) {
-            if (this.ticks++ >= tickDGold) {
-                this.level.setBlock(pos, ModBlocks.REGENED_DEEPSLATE_GOLD_ORE.get().defaultBlockState(), 3);
+            if (this.ticks++ >= tickIron) {
+                this.level.setBlock(pos, ModBlocks.REGENED_IRON_ORE.get().defaultBlockState(), 3);
             }
         }
         if (state.is(ModBlocks.REGEN_NETHER_GOLD_ORE_ENTITY.get())) {
@@ -123,6 +125,99 @@ public class RegenOreEntity extends BlockEntity implements TickaleBlockEntity {
         if (state.is(ModBlocks.REGEN_NETHER_QUARTZ_ORE_ENTITY.get())) {
             if (this.ticks++ >= tickNQuartz) {
                 this.level.setBlock(pos, ModBlocks.REGENED_NETHER_QUARTZ_ORE.get().defaultBlockState(), 3);
+            }
+        }
+
+//バニラ鉱石
+
+        if (state.is(ModBlocks.V_REGEN_IRON_ORE_ENTITY.get())) {
+            if (this.ticks++ >= tickIron) {
+                this.level.setBlock(pos, Blocks.IRON_ORE.defaultBlockState(), 3);
+            }
+        }
+        if(state.is(ModBlocks.V_REGEN_DEEPSLATE_IRON_ORE_ENTITY.get())) {
+            if (this.ticks++ >= tickDIron) {
+                this.level.setBlock(pos, Blocks.DEEPSLATE_IRON_ORE.defaultBlockState(), 3);
+            }
+        }
+        if (state.is(ModBlocks.V_REGEN_COPPER_ORE_ENTITY.get())) {
+            if (this.ticks++ >= tickCopper) {
+                this.level.setBlock(pos, Blocks.COPPER_ORE.defaultBlockState(), 3);
+            }
+        }
+        if(state.is(ModBlocks.V_REGEN_DEEPSLATE_COPPER_ORE_ENTITY.get())) {
+            if (this.ticks++ >= tickDCopper) {
+                this.level.setBlock(pos, Blocks.DEEPSLATE_COPPER_ORE.defaultBlockState(), 3);
+            }
+        }
+        if (state.is(ModBlocks.V_REGEN_GOLD_ORE_ENTITY.get())) {
+            if (this.ticks++ >= tickGold) {
+                this.level.setBlock(pos, Blocks.GOLD_ORE.defaultBlockState(), 3);
+            }
+        }
+        if(state.is(ModBlocks.V_REGEN_DEEPSLATE_GOLD_ORE_ENTITY.get())) {
+            if (this.ticks++ >= tickDGold) {
+                this.level.setBlock(pos, Blocks.DEEPSLATE_GOLD_ORE.defaultBlockState(), 3);
+            }
+        }
+        if (state.is(ModBlocks.V_REGEN_NETHER_GOLD_ORE_ENTITY.get())) {
+            if (this.ticks++ >= tickNGold) {
+                this.level.setBlock(pos, Blocks.NETHER_GOLD_ORE.defaultBlockState(), 3);
+            }
+        }
+        if (state.is(ModBlocks.V_REGEN_DIAMOND_ORE_ENTITY.get())) {
+            if (this.ticks++ >= tickDiamond) {
+                this.level.setBlock(pos, Blocks.DIAMOND_ORE.defaultBlockState(), 3);
+            }
+        }
+        if(state.is(ModBlocks.V_REGEN_DEEPSLATE_DIAMOND_ORE_ENTITY.get())) {
+            if (this.ticks++ >= tickDDiamond) {
+                this.level.setBlock(pos, Blocks.DEEPSLATE_DIAMOND_ORE.defaultBlockState(), 3);
+            }
+        }
+        if (state.is(ModBlocks.V_REGEN_EMERALD_ORE_ENTITY.get())) {
+            if (this.ticks++ >= tickEmerald) {
+                this.level.setBlock(pos, Blocks.EMERALD_ORE.defaultBlockState(), 3);
+            }
+        }
+        if(state.is(ModBlocks.V_REGEN_DEEPSLATE_EMERALD_ORE_ENTITY.get())) {
+            if (this.ticks++ >= tickDEmerald) {
+                this.level.setBlock(pos, Blocks.DEEPSLATE_EMERALD_ORE.defaultBlockState(), 3);
+            }
+        }
+        if (state.is(ModBlocks.V_REGEN_COAL_ORE_ENTITY.get())) {
+            if (this.ticks++ >= tickCoal) {
+                this.level.setBlock(pos, Blocks.COAL_ORE.defaultBlockState(), 3);
+            }
+        }
+        if(state.is(ModBlocks.V_REGEN_DEEPSLATE_COAL_ORE_ENTITY.get())) {
+            if (this.ticks++ >= tickDCoal) {
+                this.level.setBlock(pos, Blocks.DEEPSLATE_COAL_ORE.defaultBlockState(), 3);
+            }
+        }
+        if (state.is(ModBlocks.V_REGEN_LAPIS_ORE_ENTITY.get())) {
+            if (this.ticks++ >= tickLapis) {
+                this.level.setBlock(pos, Blocks.LAPIS_ORE.defaultBlockState(), 3);
+            }
+        }
+        if(state.is(ModBlocks.V_REGEN_DEEPSLATE_LAPIS_ORE_ENTITY.get())) {
+            if (this.ticks++ >= tickDLapis) {
+                this.level.setBlock(pos, Blocks.DEEPSLATE_LAPIS_ORE.defaultBlockState(), 3);
+            }
+        }
+        if (state.is(ModBlocks.V_REGEN_REDSTONE_ORE_ENTITY.get())) {
+            if (this.ticks++ >= tickRedstone) {
+                this.level.setBlock(pos, Blocks.REDSTONE_ORE.defaultBlockState(), 3);
+            }
+        }
+        if(state.is(ModBlocks.V_REGEN_DEEPSLATE_REDSTONE_ORE_ENTITY.get())) {
+            if (this.ticks++ >= tickDRedstone) {
+                this.level.setBlock(pos, Blocks.DEEPSLATE_REDSTONE_ORE.defaultBlockState(), 3);
+            }
+        }
+        if (state.is(ModBlocks.V_REGEN_NETHER_QUARTZ_ORE_ENTITY.get())) {
+            if (this.ticks++ >= tickNQuartz) {
+                this.level.setBlock(pos, Blocks.NETHER_QUARTZ_ORE.defaultBlockState(), 3);
             }
         }
     }

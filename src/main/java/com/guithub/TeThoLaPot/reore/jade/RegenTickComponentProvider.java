@@ -71,6 +71,42 @@ public enum RegenTickComponentProvider implements IBlockComponentProvider, IServ
             data.putInt("Tick", (int) (100 / tickDRedstone * tickale.ticker()));
         }else if (state.is(ModBlocks.REGEN_NETHER_QUARTZ_ORE_ENTITY.get())){
             data.putInt("Tick", (int) (100 / tickNQuartz * tickale.ticker()));
+        }else if (state.is(ModBlocks.V_REGEN_IRON_ORE_ENTITY.get())){
+            data.putInt("Tick", (int) (100 / tickIron * tickale.ticker()));
+        }else if (state.is(ModBlocks.V_REGEN_DEEPSLATE_IRON_ORE_ENTITY.get())){
+            data.putInt("Tick", (int) (100 / tickDIron * tickale.ticker()));
+        }else if (state.is(ModBlocks.V_REGEN_COPPER_ORE_ENTITY.get())){
+            data.putInt("Tick", (int) (100 / tickCopper * tickale.ticker()));
+        }else if (state.is(ModBlocks.V_REGEN_DEEPSLATE_COPPER_ORE_ENTITY.get())){
+            data.putInt("Tick", (int) (100 / tickDCopper * tickale.ticker()));
+        }else if (state.is(ModBlocks.V_REGEN_GOLD_ORE_ENTITY.get())){
+            data.putInt("Tick", (int) (100 / tickGold * tickale.ticker()));
+        }else if (state.is(ModBlocks.V_REGEN_DEEPSLATE_GOLD_ORE_ENTITY.get())){
+            data.putInt("Tick", (int) (100 / tickDGold * tickale.ticker()));
+        }else if (state.is(ModBlocks.V_REGEN_NETHER_GOLD_ORE_ENTITY.get())){
+            data.putInt("Tick", (int) (100 / tickNGold * tickale.ticker()));
+        }else if (state.is(ModBlocks.V_REGEN_DIAMOND_ORE_ENTITY.get())){
+            data.putInt("Tick", (int) (100 / tickDiamond * tickale.ticker()));
+        }else if (state.is(ModBlocks.V_REGEN_DEEPSLATE_DIAMOND_ORE_ENTITY.get())){
+            data.putInt("Tick", (int) (100 / tickDDiamond * tickale.ticker()));
+        }else if (state.is(ModBlocks.V_REGEN_EMERALD_ORE_ENTITY.get())){
+            data.putInt("Tick", (int) (100 / tickEmerald * tickale.ticker()));
+        }else if (state.is(ModBlocks.V_REGEN_DEEPSLATE_EMERALD_ORE_ENTITY.get())){
+            data.putInt("Tick", (int) (100 / tickDEmerald * tickale.ticker()));
+        }else if (state.is(ModBlocks.V_REGEN_COAL_ORE_ENTITY.get())){
+            data.putInt("Tick", (int) (100 / tickCoal * tickale.ticker()));
+        }else if (state.is(ModBlocks.V_REGEN_DEEPSLATE_COAL_ORE_ENTITY.get())){
+            data.putInt("Tick", (int) (100 / tickDCoal * tickale.ticker()));
+        }else if (state.is(ModBlocks.V_REGEN_LAPIS_ORE_ENTITY.get())){
+            data.putInt("Tick", (int) (100 / tickLapis * tickale.ticker()));
+        }else if (state.is(ModBlocks.V_REGEN_DEEPSLATE_LAPIS_ORE_ENTITY.get())){
+            data.putInt("Tick", (int) (100 / tickDLapis * tickale.ticker()));
+        }else if (state.is(ModBlocks.V_REGEN_REDSTONE_ORE_ENTITY.get())){
+            data.putInt("Tick", (int) (100 / tickRedstone * tickale.ticker()));
+        }else if (state.is(ModBlocks.V_REGEN_DEEPSLATE_REDSTONE_ORE_ENTITY.get())){
+            data.putInt("Tick", (int) (100 / tickDRedstone * tickale.ticker()));
+        }else if (state.is(ModBlocks.V_REGEN_NETHER_QUARTZ_ORE_ENTITY.get())) {
+            data.putInt("Tick", (int) (100 / tickNQuartz * tickale.ticker()));
         }
     }
 
