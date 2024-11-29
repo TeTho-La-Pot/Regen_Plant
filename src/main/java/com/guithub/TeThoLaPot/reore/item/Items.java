@@ -12,7 +12,7 @@ public class Items {
             DeferredRegister.create(ForgeRegistries.ITEMS, RE_Ore.MOD_ID);
 
     public static final RegistryObject<Item> TORE = ITEMS.register("tore",
-            () -> new Item(new Item.Properties()));
+            () -> new BreakStaff(new Item.Properties()));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);

@@ -2,10 +2,12 @@ package com.guithub.TeThoLaPot.reore.init.block;
 
 import com.guithub.TeThoLaPot.reore.RE_Ore;
 import com.guithub.TeThoLaPot.reore.item.Items;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -67,7 +69,7 @@ public class ModBlocks {
             () -> new RegenOreBlocks(BlockBehaviour.Properties.copy(Blocks.NETHERRACK).noLootTable()));
 
     public static final RegistryObject<Block> REGENED_NETHER_GOLD_ORE = registerBlock("regened_nether_gold_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHER_GOLD_ORE)));
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHER_GOLD_ORE), UniformInt.of(0,1)));
 
 
     //ダイヤモンド
@@ -75,13 +77,13 @@ public class ModBlocks {
             () -> new RegenOreBlocks(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE).noLootTable()));
 
     public static final RegistryObject<Block> REGENED_DIAMOND_ORE = registerBlock("regened_diamond_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE)));
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE), UniformInt.of(3,7)));
 
     public static final RegistryObject<Block> REGEN_DEEPSLATE_DIAMOND_ORE_ENTITY = registerBlock("regen_deepslate_diamond_ore",
             () -> new RegenOreBlocks(BlockBehaviour.Properties.copy(Blocks.COBBLED_DEEPSLATE).noLootTable()));
 
     public static final RegistryObject<Block> REGENED_DEEPSLATE_DIAMOND_ORE = registerBlock("regened_deepslate_diamond_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_DIAMOND_ORE)));
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_DIAMOND_ORE), UniformInt.of(3,7)));
 
 
     //エメラルド
@@ -89,13 +91,13 @@ public class ModBlocks {
             () -> new RegenOreBlocks(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE).noLootTable()));
 
     public static final RegistryObject<Block> REGENED_EMERALD_ORE = registerBlock("regened_emerald_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_ORE)));
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.EMERALD_ORE), UniformInt.of(3,7)));
 
     public static final RegistryObject<Block> REGEN_DEEPSLATE_EMERALD_ORE_ENTITY = registerBlock("regen_deepslate_emerald_ore",
             () -> new RegenOreBlocks(BlockBehaviour.Properties.copy(Blocks.COBBLED_DEEPSLATE).noLootTable()));
 
     public static final RegistryObject<Block> REGENED_DEEPSLATE_EMERALD_ORE = registerBlock("regened_deepslate_emerald_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_EMERALD_ORE)));
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_EMERALD_ORE), UniformInt.of(3,7)));
 
 
     //石炭
@@ -103,13 +105,13 @@ public class ModBlocks {
             () -> new RegenOreBlocks(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE).noLootTable()));
 
     public static final RegistryObject<Block> REGENED_COAL_ORE = registerBlock("regened_coal_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.COAL_ORE)));
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.COAL_ORE), UniformInt.of(0,2)));
 
     public static final RegistryObject<Block> REGEN_DEEPSLATE_COAL_ORE_ENTITY = registerBlock("regen_deepslate_coal_ore",
             () -> new RegenOreBlocks(BlockBehaviour.Properties.copy(Blocks.COBBLED_DEEPSLATE).noLootTable()));
 
     public static final RegistryObject<Block> REGENED_DEEPSLATE_COAL_ORE = registerBlock("regened_deepslate_coal_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_COAL_ORE)));
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_COAL_ORE), UniformInt.of(0,2)));
 
 
     //ラピスラズリ
@@ -117,13 +119,13 @@ public class ModBlocks {
             () -> new RegenOreBlocks(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE).noLootTable()));
 
     public static final RegistryObject<Block> REGENED_LAPIS_ORE = registerBlock("regened_lapis_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.LAPIS_ORE)));
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.LAPIS_ORE), UniformInt.of(2,5)));
 
     public static final RegistryObject<Block> REGEN_DEEPSLATE_LAPIS_ORE_ENTITY = registerBlock("regen_deepslate_lapis_ore",
             () -> new RegenOreBlocks(BlockBehaviour.Properties.copy(Blocks.COBBLED_DEEPSLATE).noLootTable()));
 
     public static final RegistryObject<Block> REGENED_DEEPSLATE_LAPIS_ORE = registerBlock("regened_deepslate_lapis_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_LAPIS_ORE)));
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_LAPIS_ORE), UniformInt.of(2,5)));
 
 
     //レッドストーン
@@ -145,7 +147,7 @@ public class ModBlocks {
             () -> new RegenOreBlocks(BlockBehaviour.Properties.copy(Blocks.NETHERRACK).noLootTable()));
 
     public static final RegistryObject<Block> REGENED_NETHER_QUARTZ_ORE = registerBlock("regened_nether_quartz_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHER_QUARTZ_ORE)));
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHER_QUARTZ_ORE), UniformInt.of(2,5)));
 
 
 
