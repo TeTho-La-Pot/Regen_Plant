@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "re_ore:block/v_regen_lapis_ore"
+    }
+  }
+}
