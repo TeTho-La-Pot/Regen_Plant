@@ -24,10 +24,31 @@ public class RegenOreCommonConfig {
     public static final ForgeConfigSpec.ConfigValue<Integer> REDSTONE_ORE_REGEN_TICK;
     public static final ForgeConfigSpec.ConfigValue<Integer> DEEPSLATE_REDSTONE_ORE_REGEN_TICK;
     public static final ForgeConfigSpec.ConfigValue<Integer> NETHER_QUARTZ_ORE_REGEN_TICK;
+
+    public static final ForgeConfigSpec.ConfigValue<Integer> ZINC_ORE_REGEN_TICK;
+    public static final ForgeConfigSpec.ConfigValue<Integer> DEEPSLATE_ZINC_ORE_REGEN_TICK;
+
+    public static final ForgeConfigSpec.ConfigValue<Integer> TIN_ORE_REGEN_TICK;
+    public static final ForgeConfigSpec.ConfigValue<Integer> DEEPSLATE_TIN_ORE_REGEN_TICK;
+    public static final ForgeConfigSpec.ConfigValue<Integer> OSUMIUM_ORE_REGEN_TICK;
+    public static final ForgeConfigSpec.ConfigValue<Integer> DEEPSLATE_OSUMIUM_ORE_REGEN_TICK;
+    public static final ForgeConfigSpec.ConfigValue<Integer> URANIUM_ORE_REGEN_TICK;
+    public static final ForgeConfigSpec.ConfigValue<Integer> DEEPSLATE_URANIUM_ORE_REGEN_TICK;
+    public static final ForgeConfigSpec.ConfigValue<Integer> FLUORITE_ORE_REGEN_TICK;
+    public static final ForgeConfigSpec.ConfigValue<Integer> DEEPSLATE_FLUORITE_ORE_REGEN_TICK;
+    public static final ForgeConfigSpec.ConfigValue<Integer> LEAD_ORE_REGEN_TICK;
+    public static final ForgeConfigSpec.ConfigValue<Integer> DEEPSLATE_LEAD_ORE_REGEN_TICK;
+
     public static final ForgeConfigSpec.BooleanValue CAN_VANILLA_REGEN;
 
     static {
         BUILDER.push("Configs for RegenOre Mod");
+
+    //Template
+//        _ORE_REGEN_TICK = BUILDER.comment("How long is  regen for  ore.")
+//                .define(" Regen Tick", 2000);
+//        DEEPSLATE__ORE_REGEN_TICK = BUILDER.comment("How long is  regen for Deepslate  ore.")
+//                .define("Deepslate  Regen Tick", 2000);
 
         IRON_ORE_REGEN_TICK = BUILDER.comment("How long is  regen for Iron ore.")
                 .define("Iron Regen Tick", 2000);
@@ -65,6 +86,36 @@ public class RegenOreCommonConfig {
                 .define("Deepslate Redstone Regen Tick", 2000);
         NETHER_QUARTZ_ORE_REGEN_TICK = BUILDER.comment("How long is  regen for Deepslate Iron ore.")
                 .define("Nether Quartz Regen Tick", 2000);
+
+        ZINC_ORE_REGEN_TICK = BUILDER.comment("How long is  regen for Zinc ore.")
+                .define("Zinc Regen Tick", 2000);
+        DEEPSLATE_ZINC_ORE_REGEN_TICK = BUILDER.comment("How long is  regen for Deepslate Zinc ore.")
+                .define("Deepslate Zinc Regen Tick", 2000);
+
+        TIN_ORE_REGEN_TICK = BUILDER.comment("How long is  regen for Tin ore.")
+                .define("Tin Regen Tick", 2000);
+        DEEPSLATE_TIN_ORE_REGEN_TICK = BUILDER.comment("How long is  regen for Deepslate Tin ore.")
+                .define("Deepslate Tin Regen Tick", 2000);
+
+        OSUMIUM_ORE_REGEN_TICK = BUILDER.comment("How long is  regen for Osumium ore.")
+                .define("Osumium Regen Tick", 2000);
+        DEEPSLATE_OSUMIUM_ORE_REGEN_TICK = BUILDER.comment("How long is  regen for Deepslate Osumium ore.")
+                .define("Deepslate Osumium Regen Tick", 2000);
+
+        URANIUM_ORE_REGEN_TICK = BUILDER.comment("How long is  regen for Uranium ore.")
+                .define("Uranium Regen Tick", 2000);
+        DEEPSLATE_URANIUM_ORE_REGEN_TICK = BUILDER.comment("How long is  regen for Deepslate Uranium ore.")
+                .define("Deepslate Uranium Regen Tick", 2000);
+
+        FLUORITE_ORE_REGEN_TICK = BUILDER.comment("How long is Fluorite regen for  ore.")
+                .define("Fluorite Regen Tick", 2000);
+        DEEPSLATE_FLUORITE_ORE_REGEN_TICK = BUILDER.comment("How long is  regen for Deepslate Fluorite ore.")
+                .define("Deepslate Fluorite Regen Tick", 2000);
+
+        LEAD_ORE_REGEN_TICK = BUILDER.comment("How long is  regen for Lead ore.")
+                .define("Lead Regen Tick", 2000);
+        DEEPSLATE_LEAD_ORE_REGEN_TICK = BUILDER.comment("How long is  regen for Deepslate Lead ore.")
+                .define("Deepslate Lead Regen Tick", 2000);
 
         CAN_VANILLA_REGEN = BUILDER.comment("Can regen ores that are already in the world.")
                 .define("Can Vanilla Regen", false);

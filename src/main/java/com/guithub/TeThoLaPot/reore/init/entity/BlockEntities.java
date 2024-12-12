@@ -50,8 +50,24 @@ public class BlockEntities {
                             ModBlocks.V_REGEN_DEEPSLATE_LAPIS_ORE_ENTITY.get(),
                             ModBlocks.V_REGEN_REDSTONE_ORE_ENTITY.get(),
                             ModBlocks.V_REGEN_DEEPSLATE_REDSTONE_ORE_ENTITY.get(),
-                            ModBlocks.V_REGEN_NETHER_QUARTZ_ORE_ENTITY.get()
-                                ).build(null));
+                            ModBlocks.V_REGEN_NETHER_QUARTZ_ORE_ENTITY.get(),
+
+                            //Create
+                            ModBlocks.CREATE_ZINC_ORE_ENTITY.get(),
+                            ModBlocks.CREATE_DEEPSLATE_ZINC_ORE_ENTITY.get(),
+
+                            //Mekanism
+                            ModBlocks.MEKANISM_TIN_ORE_ENTITY.get(),
+                            ModBlocks.MEKANISM_DEEPSLATE_TIN_ORE_ENTITY.get(),
+                            ModBlocks.MEKANISM_OSUMIUM_ORE_ENTITY.get(),
+                            ModBlocks.MEKANISM_DEEPSLATE_OSUMIUM_ORE_ENTITY.get(),
+                            ModBlocks.MEKANISM_URANIUM_ORE_ENTITY.get(),
+                            ModBlocks.MEKANISM_DEEPSLATE_URANIUM_ORE_ENTITY.get(),
+                            ModBlocks.MEKANISM_FLUORITE_ORE_ENTITY.get(),
+                            ModBlocks.MEKANISM_DEEPSLATE_FLUORITE_ORE_ENTITY.get(),
+                            ModBlocks.MEKANISM_LEAD_ORE_ENTITY.get(),
+                            ModBlocks.MEKANISM_DEEPSLATE_LEAD_ORE_ENTITY.get()
+                            ).build(null));
 
 
 

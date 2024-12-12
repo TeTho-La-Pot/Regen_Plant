@@ -2,6 +2,7 @@ package com.guithub.TeThoLaPot.reore.init.block;
 
 import com.guithub.TeThoLaPot.reore.RE_Ore;
 import com.guithub.TeThoLaPot.reore.item.Items;
+import com.simibubi.create.AllBlocks;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -205,6 +206,46 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> V_REGEN_NETHER_QUARTZ_ORE_ENTITY = registerBlock("v_regen_nether_quartz_ore",
             () -> new RegenOreBlocks(BlockBehaviour.Properties.copy(Blocks.NETHERRACK).noLootTable()));
+
+
+    //Create
+    public static final RegistryObject<Block> CREATE_ZINC_ORE_ENTITY = registerBlock("create_regen_zinc_ore",
+            () -> new RegenOreBlocks(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE).noLootTable()));
+
+    public static final RegistryObject<Block> CREATE_DEEPSLATE_ZINC_ORE_ENTITY = registerBlock("create_regen_deepslate_zinc_ore",
+            () -> new RegenOreBlocks(BlockBehaviour.Properties.copy(Blocks.COBBLED_DEEPSLATE).noLootTable()));
+
+
+    //Mekanism
+    public static final RegistryObject<Block> MEKANISM_TIN_ORE_ENTITY = registerBlock("mekanism_regen_tin_ore",
+            () -> new RegenOreBlocks(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE).noLootTable()));
+
+    public static final RegistryObject<Block> MEKANISM_DEEPSLATE_TIN_ORE_ENTITY = registerBlock("mekanism_regen_deepslate_tin_ore",
+            () -> new RegenOreBlocks(BlockBehaviour.Properties.copy(Blocks.COBBLED_DEEPSLATE).noLootTable()));
+
+    public static final RegistryObject<Block> MEKANISM_OSUMIUM_ORE_ENTITY = registerBlock("mekanism_regen_osumium_ore",
+            () -> new RegenOreBlocks(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE).noLootTable()));
+
+    public static final RegistryObject<Block> MEKANISM_DEEPSLATE_OSUMIUM_ORE_ENTITY = registerBlock("mekanism_regen_deepslate_osumium_ore",
+            () -> new RegenOreBlocks(BlockBehaviour.Properties.copy(Blocks.COBBLED_DEEPSLATE).noLootTable()));
+
+    public static final RegistryObject<Block> MEKANISM_URANIUM_ORE_ENTITY = registerBlock("mekanism_regen_uranium_ore",
+            () -> new RegenOreBlocks(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE).noLootTable()));
+
+    public static final RegistryObject<Block> MEKANISM_DEEPSLATE_URANIUM_ORE_ENTITY = registerBlock("mekanism_regen_deepslate_uranium_ore",
+            () -> new RegenOreBlocks(BlockBehaviour.Properties.copy(Blocks.COBBLED_DEEPSLATE).noLootTable()));
+
+    public static final RegistryObject<Block> MEKANISM_FLUORITE_ORE_ENTITY = registerBlock("mekanism_regen_fluorite_ore",
+            () -> new RegenOreBlocks(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE).noLootTable()));
+
+    public static final RegistryObject<Block> MEKANISM_DEEPSLATE_FLUORITE_ORE_ENTITY = registerBlock("mekanism_regen_deepslate_fluorite_ore",
+            () -> new RegenOreBlocks(BlockBehaviour.Properties.copy(Blocks.COBBLED_DEEPSLATE).noLootTable()));
+
+    public static final RegistryObject<Block> MEKANISM_LEAD_ORE_ENTITY = registerBlock("mekanism_regen_lead_ore",
+            () -> new RegenOreBlocks(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE).noLootTable()));
+
+    public static final RegistryObject<Block> MEKANISM_DEEPSLATE_LEAD_ORE_ENTITY = registerBlock("mekanism_regen_deepslate_lead_ore",
+            () -> new RegenOreBlocks(BlockBehaviour.Properties.copy(Blocks.COBBLED_DEEPSLATE).noLootTable()));
 
 
 

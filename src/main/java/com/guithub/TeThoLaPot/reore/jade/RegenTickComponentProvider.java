@@ -107,6 +107,30 @@ public enum RegenTickComponentProvider implements IBlockComponentProvider, IServ
             data.putInt("Tick", (int) (100 / tickDRedstone * tickale.ticker()));
         }else if (state.is(ModBlocks.V_REGEN_NETHER_QUARTZ_ORE_ENTITY.get())) {
             data.putInt("Tick", (int) (100 / tickNQuartz * tickale.ticker()));
+        }else if (state.is(ModBlocks.CREATE_ZINC_ORE_ENTITY.get())){
+            data.putInt("Tick", (int) (100 / tickZinc * tickale.ticker()));
+        }else if (state.is(ModBlocks.CREATE_DEEPSLATE_ZINC_ORE_ENTITY.get())) {
+            data.putInt("Tick", (int) (100 / tickDZinc * tickale.ticker()));
+        }else if (state.is(ModBlocks.MEKANISM_TIN_ORE_ENTITY.get())){
+            data.putInt("Tick", (int) (100 / tickTin * tickale.ticker()));
+        }else if (state.is(ModBlocks.MEKANISM_DEEPSLATE_TIN_ORE_ENTITY.get())) {
+            data.putInt("Tick", (int) (100 / tickDTin * tickale.ticker()));
+        }else if (state.is(ModBlocks.MEKANISM_OSUMIUM_ORE_ENTITY.get())){
+            data.putInt("Tick", (int) (100 / tickOsumium * tickale.ticker()));
+        }else if (state.is(ModBlocks.MEKANISM_DEEPSLATE_OSUMIUM_ORE_ENTITY.get())) {
+            data.putInt("Tick", (int) (100 / tickDOsumium * tickale.ticker()));
+        }else if (state.is(ModBlocks.MEKANISM_URANIUM_ORE_ENTITY.get())){
+            data.putInt("Tick", (int) (100 / tickUranium * tickale.ticker()));
+        }else if (state.is(ModBlocks.MEKANISM_DEEPSLATE_URANIUM_ORE_ENTITY.get())) {
+            data.putInt("Tick", (int) (100 / tickDUranium * tickale.ticker()));
+        }else if (state.is(ModBlocks.MEKANISM_FLUORITE_ORE_ENTITY.get())){
+            data.putInt("Tick", (int) (100 / tickFluorite * tickale.ticker()));
+        }else if (state.is(ModBlocks.MEKANISM_DEEPSLATE_FLUORITE_ORE_ENTITY.get())) {
+            data.putInt("Tick", (int) (100 / tickDFluorite * tickale.ticker()));
+        }else if (state.is(ModBlocks.MEKANISM_LEAD_ORE_ENTITY.get())){
+            data.putInt("Tick", (int) (100 / tickLead * tickale.ticker()));
+        }else if (state.is(ModBlocks.MEKANISM_DEEPSLATE_LEAD_ORE_ENTITY.get())) {
+            data.putInt("Tick", (int) (100 / tickDLead * tickale.ticker()));
         }
     }
 

@@ -4,7 +4,12 @@ import com.guithub.TeThoLaPot.reore.RE_Ore;
 import com.guithub.TeThoLaPot.reore.init.block.ModBlocks;
 import com.guithub.TeThoLaPot.reore.util.RegenCooldownUtils;
 import com.guithub.TeThoLaPot.reore.util.RegenTickUtils;
+import com.jozufozu.flywheel.core.GameStateRegistry;
+import com.simibubi.create.AllBlocks;
+import com.simibubi.create.Create;
+import com.simibubi.create.foundation.data.CreateBlockEntityBuilder;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Registry;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
@@ -13,7 +18,11 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.event.level.BlockEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.common.Mod;
+
+import java.util.logging.Logger;
+
 
 @Mod.EventBusSubscriber(modid = RE_Ore.MOD_ID)
 public class BreakEvent {
@@ -200,6 +209,7 @@ public class BreakEvent {
                 }
 
                 if (RegenCooldownUtils.vanillaRegen == true) {
+                    //Vanilla Ores
                     if (state.is(Blocks.COAL_ORE) || state.is(ModBlocks.V_REGEN_COAL_ORE_ENTITY.get())) {
                         if (mainHand.isCorrectToolForDrops(state)) {
                             state.getBlock().playerDestroy(player.level(), player, pos, state, null, mainHand);
@@ -356,6 +366,122 @@ public class BreakEvent {
                         level.setBlock(pos, ModBlocks.V_REGEN_NETHER_QUARTZ_ORE_ENTITY.get().defaultBlockState(), 3);
                         event.setCanceled(true);
                     }
+
+                    //Create Ores
+                    if (ModList.get().isLoaded("create")) {
+                        if (state.is(AllBlocks.ZINC_ORE.get()) || state.is(ModBlocks.CREATE_ZINC_ORE_ENTITY.get())) {
+                            if (mainHand.isCorrectToolForDrops(state)) {
+                                state.getBlock().playerDestroy(player.level(), player, pos, state, null, mainHand);
+                                state.getBlock().popExperience(level, pos, event.getExpToDrop());
+                            }
+                            level.removeBlock(pos, false);
+                            level.setBlock(pos, ModBlocks.CREATE_ZINC_ORE_ENTITY.get().defaultBlockState(), 3);
+                            event.setCanceled(true);
+                        }
+                        if (state.is(AllBlocks.DEEPSLATE_ZINC_ORE.get()) || state.is(ModBlocks.CREATE_DEEPSLATE_ZINC_ORE_ENTITY.get())) {
+                            if (mainHand.isCorrectToolForDrops(state)) {
+                                state.getBlock().playerDestroy(player.level(), player, pos, state, null, mainHand);
+                                state.getBlock().popExperience(level, pos, event.getExpToDrop());
+                            }
+                            level.removeBlock(pos, false);
+                            level.setBlock(pos, ModBlocks.CREATE_DEEPSLATE_ZINC_ORE_ENTITY.get().defaultBlockState(), 3);
+                            event.setCanceled(true);
+                        }
+                    }
+//
+//                    //Mekanism Ores
+//                    if (ModList.get().isLoaded("mekanism")) {
+//                        if (state.is(MekanismBlocks.ORES.get(OreType.TIN).stoneBlock()) || state.is(ModBlocks.MEKANISM_TIN_ORE_ENTITY.get())) {
+//                            if (mainHand.isCorrectToolForDrops(state)) {
+//                                state.getBlock().playerDestroy(player.level(), player, pos, state, null, mainHand);
+//                                state.getBlock().popExperience(level, pos, event.getExpToDrop());
+//                            }
+//                            level.removeBlock(pos, false);
+//                            level.setBlock(pos, ModBlocks.MEKANISM_TIN_ORE_ENTITY.get().defaultBlockState(), 3);
+//                            event.setCanceled(true);
+//                        }
+//                        if (state.is(MekanismBlocks.ORES.get(OreType.TIN).deepslateBlock()) || state.is(ModBlocks.MEKANISM_DEEPSLATE_TIN_ORE_ENTITY.get())) {
+//                            if (mainHand.isCorrectToolForDrops(state)) {
+//                                state.getBlock().playerDestroy(player.level(), player, pos, state, null, mainHand);
+//                                state.getBlock().popExperience(level, pos, event.getExpToDrop());
+//                            }
+//                            level.removeBlock(pos, false);
+//                            level.setBlock(pos, ModBlocks.MEKANISM_DEEPSLATE_TIN_ORE_ENTITY.get().defaultBlockState(), 3);
+//                            event.setCanceled(true);
+//                        }
+//                        if (state.is(MekanismBlocks.ORES.get(OreType.OSMIUM).stoneBlock()) || state.is(ModBlocks.MEKANISM_OSUMIUM_ORE_ENTITY.get())) {
+//                            if (mainHand.isCorrectToolForDrops(state)) {
+//                                state.getBlock().playerDestroy(player.level(), player, pos, state, null, mainHand);
+//                                state.getBlock().popExperience(level, pos, event.getExpToDrop());
+//                            }
+//                            level.removeBlock(pos, false);
+//                            level.setBlock(pos, ModBlocks.MEKANISM_OSUMIUM_ORE_ENTITY.get().defaultBlockState(), 3);
+//                            event.setCanceled(true);
+//                        }
+//                        if (state.is(MekanismBlocks.ORES.get(OreType.OSMIUM).deepslateBlock()) || state.is(ModBlocks.MEKANISM_DEEPSLATE_OSUMIUM_ORE_ENTITY.get())) {
+//                            if (mainHand.isCorrectToolForDrops(state)) {
+//                                state.getBlock().playerDestroy(player.level(), player, pos, state, null, mainHand);
+//                                state.getBlock().popExperience(level, pos, event.getExpToDrop());
+//                            }
+//                            level.removeBlock(pos, false);
+//                            level.setBlock(pos, ModBlocks.MEKANISM_DEEPSLATE_OSUMIUM_ORE_ENTITY.get().defaultBlockState(), 3);
+//                            event.setCanceled(true);
+//                        }
+//                        if (state.is(MekanismBlocks.ORES.get(OreType.URANIUM).stoneBlock()) || state.is(ModBlocks.MEKANISM_URANIUM_ORE_ENTITY.get())) {
+//                            if (mainHand.isCorrectToolForDrops(state)) {
+//                                state.getBlock().playerDestroy(player.level(), player, pos, state, null, mainHand);
+//                                state.getBlock().popExperience(level, pos, event.getExpToDrop());
+//                            }
+//                            level.removeBlock(pos, false);
+//                            level.setBlock(pos, ModBlocks.MEKANISM_URANIUM_ORE_ENTITY.get().defaultBlockState(), 3);
+//                            event.setCanceled(true);
+//                        }
+//                        if (state.is(MekanismBlocks.ORES.get(OreType.URANIUM).deepslateBlock()) || state.is(ModBlocks.MEKANISM_DEEPSLATE_URANIUM_ORE_ENTITY.get())) {
+//                            if (mainHand.isCorrectToolForDrops(state)) {
+//                                state.getBlock().playerDestroy(player.level(), player, pos, state, null, mainHand);
+//                                state.getBlock().popExperience(level, pos, event.getExpToDrop());
+//                            }
+//                            level.removeBlock(pos, false);
+//                            level.setBlock(pos, ModBlocks.MEKANISM_DEEPSLATE_URANIUM_ORE_ENTITY.get().defaultBlockState(), 3);
+//                            event.setCanceled(true);
+//                        }
+//                        if (state.is(MekanismBlocks.ORES.get(OreType.FLUORITE).stoneBlock()) || state.is(ModBlocks.MEKANISM_FLUORITE_ORE_ENTITY.get())) {
+//                            if (mainHand.isCorrectToolForDrops(state)) {
+//                                state.getBlock().playerDestroy(player.level(), player, pos, state, null, mainHand);
+//                                state.getBlock().popExperience(level, pos, event.getExpToDrop());
+//                            }
+//                            level.removeBlock(pos, false);
+//                            level.setBlock(pos, ModBlocks.MEKANISM_FLUORITE_ORE_ENTITY.get().defaultBlockState(), 3);
+//                            event.setCanceled(true);
+//                        }
+//                        if (state.is(MekanismBlocks.ORES.get(OreType.FLUORITE).deepslateBlock()) || state.is(ModBlocks.MEKANISM_DEEPSLATE_FLUORITE_ORE_ENTITY.get())) {
+//                            if (mainHand.isCorrectToolForDrops(state)) {
+//                                state.getBlock().playerDestroy(player.level(), player, pos, state, null, mainHand);
+//                                state.getBlock().popExperience(level, pos, event.getExpToDrop());
+//                            }
+//                            level.removeBlock(pos, false);
+//                            level.setBlock(pos, ModBlocks.MEKANISM_DEEPSLATE_FLUORITE_ORE_ENTITY.get().defaultBlockState(), 3);
+//                            event.setCanceled(true);
+//                        }
+//                        if (state.is(MekanismBlocks.ORES.get(OreType.LEAD).stoneBlock()) || state.is(ModBlocks.MEKANISM_LEAD_ORE_ENTITY.get())) {
+//                            if (mainHand.isCorrectToolForDrops(state)) {
+//                                state.getBlock().playerDestroy(player.level(), player, pos, state, null, mainHand);
+//                                state.getBlock().popExperience(level, pos, event.getExpToDrop());
+//                            }
+//                            level.removeBlock(pos, false);
+//                            level.setBlock(pos, ModBlocks.MEKANISM_LEAD_ORE_ENTITY.get().defaultBlockState(), 3);
+//                            event.setCanceled(true);
+//                        }
+//                        if (state.is(MekanismBlocks.ORES.get(OreType.LEAD).deepslateBlock()) || state.is(ModBlocks.MEKANISM_DEEPSLATE_LEAD_ORE_ENTITY.get())) {
+//                            if (mainHand.isCorrectToolForDrops(state)) {
+//                                state.getBlock().playerDestroy(player.level(), player, pos, state, null, mainHand);
+//                                state.getBlock().popExperience(level, pos, event.getExpToDrop());
+//                            }
+//                            level.removeBlock(pos, false);
+//                            level.setBlock(pos, ModBlocks.MEKANISM_DEEPSLATE_LEAD_ORE_ENTITY.get().defaultBlockState(), 3);
+//                            event.setCanceled(true);
+//                        }
+//                    }
                 }
             } else if (offHand.getTag().getInt("mode") == 1){
                 if (RegenTickUtils.isCanRegen(levelAccessor.getBlockState(pos)) || RegenTickUtils.isDoneRegen(levelAccessor.getBlockState(pos))) {

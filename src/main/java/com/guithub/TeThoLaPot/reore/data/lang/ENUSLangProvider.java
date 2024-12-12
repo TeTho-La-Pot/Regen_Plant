@@ -74,6 +74,9 @@ public class ENUSLangProvider extends LanguageProvider {
         addBlock(ModBlocks.V_REGEN_DEEPSLATE_REDSTONE_ORE_ENTITY, "Regening Deepslate Redstone Ore");
         addBlock(ModBlocks.V_REGEN_NETHER_QUARTZ_ORE_ENTITY, "Regening Nether Quartz Ore");
 
+        addBlock(ModBlocks.CREATE_ZINC_ORE_ENTITY, "Regening Zinc Ore");
+        addBlock(ModBlocks.CREATE_DEEPSLATE_ZINC_ORE_ENTITY, "Regening Deepslate Zinc Ore");
+
         addBlock(ModBlocks.TEST_ORE, "Test Ore");
 
         //CreativeTabs

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "re_ore:block/create_regen_deepslate_zinc_ore"
+    }
+  }
+}

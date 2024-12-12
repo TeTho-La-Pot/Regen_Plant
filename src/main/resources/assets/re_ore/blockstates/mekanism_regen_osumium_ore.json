@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "re_ore:block/mekanism_regen_osumium_ore"
+    }
+  }
+}

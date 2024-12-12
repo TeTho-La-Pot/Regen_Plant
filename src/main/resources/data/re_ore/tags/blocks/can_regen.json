@@ -36,7 +36,9 @@
     "re_ore:v_regen_deepslate_lapis_ore",
     "re_ore:v_regen_redstone_ore",
     "re_ore:v_regen_deepslate_redstone_ore",
-    "re_ore:v_regen_nether_quartz_ore"
+    "re_ore:v_regen_nether_quartz_ore",
+    "re_ore:create_regen_zinc_ore",
+    "re_ore:create_regen_deepslate_zinc_ore"
 
   ]
 }
