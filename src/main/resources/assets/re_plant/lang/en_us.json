@@ -1,0 +1,9 @@
+{
+  "block.re_plant.regen_oak": "Regening Oak",
+  "block.re_plant.regened_oak": "Regened Oak",
+
+  "config.jade.plugin_re_ore.regen_tick": "Regen Time",
+  "creativetab.replant_tab": "Regen Ore",
+  "item.re_plant.tore": "Raw Test Ore",
+  "re_plant.regen": "RegenCooldown: %s"
+}

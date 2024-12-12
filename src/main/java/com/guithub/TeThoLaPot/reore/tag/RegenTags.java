@@ -1,6 +1,6 @@
 package com.guithub.TeThoLaPot.reore.tag;
 
-import com.guithub.TeThoLaPot.reore.RE_Ore;
+import com.guithub.TeThoLaPot.reore.RE_Plant;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.TagKey;
@@ -14,7 +14,7 @@ public class RegenTags {
 
 
         private static TagKey<Block> tag(String name){
-            return BlockTags.create(new ResourceLocation(RE_Ore.MOD_ID, name));
+            return BlockTags.create(new ResourceLocation(RE_Plant.MOD_ID, name));
         }
 
     }

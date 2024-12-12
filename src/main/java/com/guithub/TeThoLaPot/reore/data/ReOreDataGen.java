@@ -1,12 +1,11 @@
 package com.guithub.TeThoLaPot.reore.data;
 
-import com.guithub.TeThoLaPot.reore.RE_Ore;
+import com.guithub.TeThoLaPot.reore.RE_Plant;
 import com.guithub.TeThoLaPot.reore.data.lang.ENUSLangProvider;
 import com.guithub.TeThoLaPot.reore.data.loot.ReOreLootTables;
 import com.guithub.TeThoLaPot.reore.data.model.ReOreBlockStateProvider;
 import com.guithub.TeThoLaPot.reore.data.model.ReOreItemModelProvider;
 import com.guithub.TeThoLaPot.reore.data.tag.ReOreBlockTagsProvider;
-import net.minecraft.core.Holder;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
@@ -17,7 +16,7 @@ import net.minecraftforge.fml.common.Mod;
 
 import java.util.concurrent.CompletableFuture;
 
-@Mod.EventBusSubscriber(modid = RE_Ore.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
+@Mod.EventBusSubscriber(modid = RE_Plant.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ReOreDataGen {
 
     @SubscribeEvent

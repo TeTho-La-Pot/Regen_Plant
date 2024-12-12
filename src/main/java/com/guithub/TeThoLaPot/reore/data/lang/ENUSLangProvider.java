@@ -1,6 +1,6 @@
 package com.guithub.TeThoLaPot.reore.data.lang;
 
-import com.guithub.TeThoLaPot.reore.RE_Ore;
+import com.guithub.TeThoLaPot.reore.RE_Plant;
 import com.guithub.TeThoLaPot.reore.init.block.ModBlocks;
 import com.guithub.TeThoLaPot.reore.item.Items;
 import net.minecraft.data.PackOutput;
@@ -10,7 +10,7 @@ import java.util.Locale;
 
 public class ENUSLangProvider extends LanguageProvider {
     public ENUSLangProvider(PackOutput output) {
-        super(output, RE_Ore.MOD_ID, Locale.US.toString().toLowerCase());
+        super(output, RE_Plant.MOD_ID, Locale.US.toString().toLowerCase());
     }
 
     @Override

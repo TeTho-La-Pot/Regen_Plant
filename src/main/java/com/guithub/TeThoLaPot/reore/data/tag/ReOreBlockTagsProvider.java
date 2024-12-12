@@ -1,6 +1,6 @@
 package com.guithub.TeThoLaPot.reore.data.tag;
 
-import com.guithub.TeThoLaPot.reore.RE_Ore;
+import com.guithub.TeThoLaPot.reore.RE_Plant;
 import com.guithub.TeThoLaPot.reore.init.block.ModBlocks;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
@@ -13,7 +13,7 @@ import java.util.concurrent.CompletableFuture;
 
 public class ReOreBlockTagsProvider extends BlockTagsProvider {
     public ReOreBlockTagsProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider, @Nullable ExistingFileHelper existingFileHelper) {
-        super(output, lookupProvider, RE_Ore.MOD_ID, existingFileHelper);
+        super(output, lookupProvider, RE_Plant.MOD_ID, existingFileHelper);
     }
 
     @Override

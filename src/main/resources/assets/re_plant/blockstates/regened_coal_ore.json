@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "re_plant:block/regened_oak"
+    }
+  }
+}
