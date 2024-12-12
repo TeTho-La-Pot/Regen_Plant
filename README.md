@@ -1,4 +1,4 @@
-# RegenOre
+# RegenPlant
 このソースコードはMinecraft ver.1.20.1のMOD用です。
 
 # Download
